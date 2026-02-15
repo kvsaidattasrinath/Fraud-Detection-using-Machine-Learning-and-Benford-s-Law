@@ -1,4 +1,7 @@
 # Fraud-Detection-using-Machine-Learning-and-Benford-s-Law
 Exploring fraud patterns in financial transaction data using Random Forest and Benford’s Law, focusing on behavioral and numerical analysis.
-
+## About the project
 This project investigates financial fraud detection by integrating machine learning with statistical digit analysis. A Random Forest model is used to identify behaviorally suspicious transactions, after which Benford’s Law is applied to evaluate numerical irregularities within the flagged subset. The results demonstrate that Benford’s Law is most effective as a secondary validation tool when combined with machine learning.
+## Conclusion
+
+In this project, we built a fraud detection pipeline using a Random Forest model and Benford’s Law on a large financial transaction dataset. The machine learning model was able to identify behaviorally suspicious transactions with reasonable performance. When Benford’s Law was applied to the full dataset, it did not clearly separate fraud from normal transactions. However, applying Benford’s analysis only to the transactions flagged by the model showed clear numerical irregularities, reflected in a high deviation from the expected Benford distribution. This suggests that fraud in this dataset is primarily behavioral, and that Benford’s Law is more useful as a supporting validation step rather than a standalone fraud detector. Overall, the project shows that combining machine learning with simple statistical checks can provide more meaningful insight into fraud patterns than using either method alone.
